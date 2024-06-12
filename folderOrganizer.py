@@ -49,7 +49,7 @@ def PicsDocsVid(path):
 
 
 if __name__ == "__main__":
-    folderPath = "C:/Users/CobaltSly/Downloads"
+    folderPath = input ("Enter your file path that you want to organize:)  # JUST ENTER YOUR FILE PATH HERE
     while True:
         PicsDocsVid(folderPath)
         time.sleep(10)
