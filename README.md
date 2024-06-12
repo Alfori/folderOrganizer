@@ -19,7 +19,7 @@ Simple script utilzing the os library to organize your files in a folder to spec
 
 <p align="center">
 Simply run the script and enter the folder you want to organize: <br/>
-<img src="https://imgur.com/a/1rCQ744" height="80%" width="80%" alt="Script How To"/>
+<img src="https://i.imgur.com/EY5KwSD.png" height="80%" width="80%" alt="Script How To"/>
 <br />
 <br />
 
