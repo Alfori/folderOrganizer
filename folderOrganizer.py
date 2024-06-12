@@ -2,7 +2,7 @@ import os
 import shutil
 import time
 
-def PicsDocsVid(path):
+def folderOrganizer(path):
 
     categories = {      # jot down all the categories (folders) and their values will be the types
         "Images": [".jpg", ".png", ".jpeg", ".gif", ".bmp"],
@@ -22,7 +22,7 @@ def PicsDocsVid(path):
                 return category
         return "Others"
     
-    def is_file_downloaded(file_path, check_interval=2, check_times=5): # keeps checking the size, if its constant for longer than it sleeps for 5 more seconds
+    def is_file_downloaded(file_path, check_interval=1, check_times=2): # keeps checking the size, if its constant for longer than it sleeps for 5 more seconds
         """Check if a file is still being written to by verifying if its size remains constant."""
         initial_size = os.path.getsize(file_path)
         for _ in range(check_times):
@@ -49,10 +49,11 @@ def PicsDocsVid(path):
 
 
 if __name__ == "__main__":
-    folderPath = input ("Enter your file path that you want to organize:)  # JUST ENTER YOUR FILE PATH HERE
+    #folderPath = "C:/Users/CobaltSly/Downloads"
+    folderPath = input ("Enter your file path that you want to organize:")  # JUST ENTER YOUR FILE PATH HERE
     while True:
-        PicsDocsVid(folderPath)
-        time.sleep(10)
+        folderOrganizer(folderPath)
+        #time.sleep(1)
 
 # USEFUL OS FUNCTIONS
 # ========================================================
